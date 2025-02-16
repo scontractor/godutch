@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <!-- Calculator Display -->
+            <div class="display">
+                <div class="previous-operand"></div>
+                <div class="current-operand">0</div>
+            </div>
+
+            <!-- Calculator Buttons -->
+            <div class="buttons">
+                <!-- First Row -->
+                <button class="special clear" data-action="clear">AC</button>
+                <button class="special" data-action="delete">DEL</button>
+                <button class="operator" data-action="operator">%</button>
+                <button class="operator" data-action="operator">÷</button>
+                
+                <!-- Second Row -->
+                <button class="number" data-number>7</button>
+                <button class="number" data-number>8</button>
+                <button class="number" data-number>9</button>
+                <button class="operator" data-action="operator">×</button>
+                
+                <!-- Third Row -->
+                <button class="number" data-number>4</button>
+                <button class="number" data-number>5</button>
+                <button class="number" data-number>6</button>
+                <button class="operator" data-action="operator">-</button>
+                
+                <!-- Fourth Row -->
+                <button class="number" data-number>1</button>
+                <button class="number" data-number>2</button>
+                <button class="number" data-number>3</button>
+                <button class="operator" data-action="operator">+</button>
+                
+                <!-- Fifth Row -->
+                <button class="number zero" data-number>0</button>
+                <button class="number" data-number>.</button>
+                <button class="equals" data-action="calculate">=</button>
+            </div>
+        </div>
+
+        <!-- Optional: Add a theme toggle button -->
+        <button id="theme-toggle" class="theme-toggle">
+            <span class="theme-icon">🌙</span>
+        </button>
+    </div>
+
+    <!-- Add calculator version and credits -->
+    <div class="calculator-info">
+        <p>Calculator v1.0</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
